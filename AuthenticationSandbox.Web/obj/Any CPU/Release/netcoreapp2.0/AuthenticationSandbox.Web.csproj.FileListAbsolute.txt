@@ -1,0 +1,11 @@
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\bin\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.deps.json
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\bin\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.runtimeconfig.json
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\bin\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.runtimeconfig.dev.json
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\bin\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.dll
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\bin\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.pdb
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.csproj.CoreCompileInputs.cache
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\UserSecretsAssemblyInfo.cs
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.AssemblyInfoInputs.cache
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.AssemblyInfo.cs
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.dll
+F:\AuthenticationSandbox\AuthenticationSandbox.Web\obj\Any CPU\Release\netcoreapp2.0\AuthenticationSandbox.Web.pdb

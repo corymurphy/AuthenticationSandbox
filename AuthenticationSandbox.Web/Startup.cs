@@ -1,16 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using AuthenticationSandbox.Web.Data;
+﻿using AuthenticationSandbox.Web.Data;
 using AuthenticationSandbox.Web.Models;
 using AuthenticationSandbox.Web.Services;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 
 namespace AuthenticationSandbox.Web
 {
@@ -33,12 +30,29 @@ namespace AuthenticationSandbox.Web
                 .AddEntityFrameworkStores<ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
+            
+
+
+            services.AddAuthentication().AddWsFederation
+                (
+                    options =>
+                    {
+                        options.MetadataAddress = Configuration.GetValue<string>("WsFederationMetadataUrl");
+                        options.Wtrealm = Configuration.GetValue<string>("WsFederationAudience");
+                        options.TokenValidationParameters = new TokenValidationParameters()
+                        {
+                            ValidAudience = Configuration.GetValue<string>("WsFederationAudience")
+                        };
+
+                    }
+                );
+
             services.AddAuthentication().AddOpenIdConnect
                 (
                     options =>
                     {
-                        options.Authority = "https://idp.cmlab.local/SecureAuth7";
-                        options.ClientId = "30dac68668f4453e8a672333bb110f7e";
+                        options.Authority = "https://labidp.sadep.local/SecureAuth18";
+                        options.ClientId = "50893151dc864376942d8b00266d144d";
                         options.Scope.Add("email");
                     }
                 );
